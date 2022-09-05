@@ -1,0 +1,72 @@
+
+<html>
+  <head>
+  	<title>Student Information</title>
+  	<meta charset="UTF-8">	
+
+ <!--Adding Datatable Style cdn-->
+ <link rel= "stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+ <!--Adding Jquery cdn-->
+ <script src="https://code.jquery.com/jquery-3.5.1.js">    </script>
+ <!--Adding Datatable cdn-->
+ <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js">   
+ </script>
+ 
+    
+   <script>
+        $(document).ready(function () {
+          $('#example').DataTable();
+               });
+    </script> 
+
+  </head>
+
+  <body>
+    <table id="example" class="display" style="width:100%">
+    <thead>
+	    <tr>
+	      <th>St_Id</th>
+	      <th>St_Name</th>
+	      <th>St_FName</th>
+	      <th>St_MName</th>
+	      <th>St_Mobile</th>
+	    </tr>
+    </thead>
+
+    <tbody>
+
+      <?php ?>
+        <tr>
+            <td>01</td>
+            <td>Ibnul</td>
+            <td>Amirul</td>
+            <td>Shahanaz</td>
+            <td>01778535454</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Lina</td>
+            <td>Lutfor</td>
+            <td>Parvin</td>
+            <td>01737244455</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>Liza</td>
+            <td>Lutfor</td>
+            <td>Parvin</td>
+            <td>01823677717</td>
+        </tr>
+    <tfoot>
+	    <tr>
+            <th>St_Id</th>
+            <th>St_Name</th>
+            <th>St_FName</th>
+            <th>St_MName</th>
+            <th>St_Mobile</th>
+	    </tr>
+    </tfoot>
+    </table>
+  </body>
+</html>
+
